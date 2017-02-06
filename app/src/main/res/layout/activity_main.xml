@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/splash_bg_newyear"
     android:orientation="horizontal">
 
-</LinearLayout>
+    <ImageView
+        android:src="@drawable/splash_horse_newyear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
