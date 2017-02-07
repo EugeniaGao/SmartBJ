@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-
 import com.jing.www.smartbj.R;
 import com.jing.www.smartbj.adapter.GuideVpAdapter;
 import com.jing.www.smartbj.utils.Constant;
@@ -111,8 +110,8 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
     //引导按钮的点击事件
     @Override
     public void onClick(View v) {
-       SPUtils.saveBoolean(this, Constant.KEY_HAS_GUIDE,false);
-        Intent intent = new Intent(this,HomeActivity.class);
+       SPUtils.saveBoolean(this, Constant.KEY_HAS_GUIDE,true);
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
         finish();
     }

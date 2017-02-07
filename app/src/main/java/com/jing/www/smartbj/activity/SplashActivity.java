@@ -24,7 +24,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rl = (RelativeLayout) findViewById(R.id.activity_main);
-       // Intent intent = new Intent(this,HomeActivity.class);
+       // Intent intent = new Intent(this,MainActivity.class);
        // startActivity(intent);
         //創建閃屏界面的動畫
         Animation animation = createAnimation();
@@ -72,7 +72,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
             boolean hasGuide = SPUtils.getBoolean(SplashActivity.this, Constant.KEY_HAS_GUIDE,false);
             if(hasGuide){
                 //sp中进行过向导的演示,就直接进入home界面中
-                Intent intent= new Intent(getApplicationContext(),HomeActivity.class);
+                Intent intent= new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
             }else{
                 Intent intent= new Intent(getApplicationContext(),GuideActivity.class);

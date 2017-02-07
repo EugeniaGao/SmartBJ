@@ -8,21 +8,19 @@ import com.jing.www.smartbj.base.BaseFragment;
  * Created by Administrator on 2017/2/5.
  */
 
-public class HomeTabFragment extends BaseFragment  {
+public class GovaffairsFragment extends BaseFragment {
 
 
     @Override
     public void initTitle() {
-        setMenu(false);
-        setTitle("首页");
-        setType(true);
+        setMenu(true);
+        setTitle("政务");
+        setType(false);
+
     }
 
     @Override
     public View createContent() {
-
         return null;
     }
-
-
 }

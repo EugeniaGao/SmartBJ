@@ -5,4 +5,6 @@ package com.jing.www.smartbj.utils;
  */
 public class Constant {
     public static final String KEY_HAS_GUIDE="key_has_guide";
+    public  static  final String HOST = "http://10.0.2.2:8080/zhbj";
+    public static final String NEWSCENTER_URL=HOST+"/categories.json";
 }

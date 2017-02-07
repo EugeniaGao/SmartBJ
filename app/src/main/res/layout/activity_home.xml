@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
 
     >
-    <android.support.v4.view.ViewPager
+    <com.jing.www.smartbj.view.NoScrollViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         >
-    </android.support.v4.view.ViewPager>
+    </com.jing.www.smartbj.view.NoScrollViewPager>
 
     <RadioGroup
         android:id="@+id/rg"
@@ -25,6 +25,7 @@
             android:id="@+id/rb_tab_home"
             android:drawableTop="@drawable/home_tab_selector"
             android:text="首页"
+            android:checked="true"
             style="@style/tab_rb_style" />
 
         <RadioButton

@@ -8,14 +8,13 @@ import com.jing.www.smartbj.base.BaseFragment;
  * Created by Administrator on 2017/2/5.
  */
 
-public class HomeTabFragment extends BaseFragment  {
-
-
+public class SmartServiceTabFragment extends BaseFragment {
     @Override
     public void initTitle() {
-        setMenu(false);
-        setTitle("首页");
-        setType(true);
+        setMenu(true);
+        setTitle("智慧服务");
+        setType(false);
+
     }
 
     @Override
@@ -23,6 +22,4 @@ public class HomeTabFragment extends BaseFragment  {
 
         return null;
     }
-
-
 }
