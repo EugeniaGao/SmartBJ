@@ -4,3 +4,4 @@
 * okhttp
 * glide
 * viewpager
+* slidingmenu
