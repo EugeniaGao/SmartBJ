@@ -18,17 +18,12 @@ import com.jing.www.smartbj.base.BaseLoadNetDataOperator;
 import com.jing.www.smartbj.pager.NewsCenterContentTabPager;
 import com.jing.www.smartbj.bean.NewsCenterBean;
 import com.jing.www.smartbj.bean.NewsCenterTabBean;
-import com.jing.www.smartbj.utils.Constant;
-import com.jing.www.smartbj.utils.MyToast;
 import com.viewpagerindicator.TabPageIndicator;
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.ButterKnife;
-import okhttp3.Call;
 
 /**
  * Created by Administrator on 2017/2/5.
@@ -115,27 +110,27 @@ public class NewsCenterFragment extends BaseFragment implements BaseLoadNetDataO
 
     @Override
     public void loadNetData() {
-        final String url = Constant.NEWSCENTER_URL;
-
-        OkHttpUtils
-                .get()
-                .url(url)
-                .build()
-                .execute(new StringCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-                        MyToast.show(getActivity(), "网络连接失败");
-                    }
-
-                    @Override
-                    public void onResponse(String response, int id) {
-                        MyToast.show(getActivity(), "网络连接成功");
-                        ProcessData(response);
-                        //渲染的是本fragment的布局
-                        View view = createContent();
-                        addView(view);
-                    }
-                });
+//        final String url = Constant.NEWSCENTER_URL;
+//
+//        OkHttpUtils
+//                .get()
+//                .url(url)
+//                .build()
+//                .execute(new StringCallback() {
+//                    @Override
+//                    public void onError(Call call, Exception e, int id) {
+//                        MyToast.show(getActivity(), "网络连接失败");
+//                    }
+//
+//                    @Override
+//                    public void onResponse(String response, int id) {
+//                        MyToast.show(getActivity(), "网络连接成功");
+//                        ProcessData(response);
+//                        //渲染的是本fragment的布局
+//                        View view = createContent();
+//                        addView(view);
+//                    }
+//                });
 
 
     }

@@ -43,7 +43,7 @@ public class NewsCenterTabVPAdapter extends PagerAdapter {
         //通过position得到对应的view,转换成对应的Basepager,即新闻主体的碎片
        NewsCenterContentTabPager tabPager=views.get(position);
         String url = Constant.HOST+tabBeenList.get(position).getUrl();
-        tabPager.loadNetData(url );
+//        tabPager.loadNetData(url );
 
 
         return view;

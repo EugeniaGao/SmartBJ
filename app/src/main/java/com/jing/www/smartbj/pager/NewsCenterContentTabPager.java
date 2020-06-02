@@ -13,11 +13,7 @@ import com.google.gson.Gson;
 import com.jing.www.smartbj.R;
 import com.jing.www.smartbj.adapter.SwitchImgVPAdapter;
 import com.jing.www.smartbj.bean.NewsCenterTabBean;
-import com.jing.www.smartbj.utils.MyLogger;
-import com.jing.www.smartbj.utils.MyToast;
 import com.squareup.picasso.Picasso;
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +21,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import okhttp3.Call;
 
 /**
  * Created by Administrator on 2017/2/12.
@@ -62,29 +57,29 @@ public class NewsCenterContentTabPager implements ViewPager.OnPageChangeListener
         return view;
     }
 
-    //从网络上获取数据
-    public void loadNetData(String url) {
-        OkHttpUtils
-                .get()
-                .url(url)
-                .build()
-                .execute(new StringCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-                        //TODO
-                        MyToast.show(context, "tab_新闻主体数据加载失败");
-                    }
-
-                    @Override
-                    public void onResponse(String response, int id) {
-                        MyLogger.i(TAG,response);
-                        processData(response);
-                    }
-
-
-                });
-
-    }
+//    //从网络上获取数据
+//    public void loadNetData(String url) {
+//        OkHttpUtils
+//                .get()
+//                .url(url)
+//                .build()
+//                .execute(new StringCallback() {
+//                    @Override
+//                    public void onError(Call call, Exception e, int id) {
+//                        //TODO
+//                        MyToast.show(context, "tab_新闻主体数据加载失败");
+//                    }
+//
+//                    @Override
+//                    public void onResponse(String response, int id) {
+//                        MyLogger.i(TAG,response);
+//                        processData(response);
+//                    }
+//
+//
+//                });
+//
+//    }
     public void processData(String json) {
         Gson gson = new Gson();
         newsCenterTabBean = gson.fromJson(json, NewsCenterTabBean.class);
