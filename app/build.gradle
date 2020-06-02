@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.jing.www.smartbj"
         minSdkVersion 17
@@ -24,16 +24,20 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:24.2.1'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     implementation project(':library-slidingmenu')
     implementation project(':library-ViewPagerIndicator')
-    implementation 'com.android.support:support-v4:24.2.1'
-    implementation 'com.jakewharton:butterknife:8.4.0'
+    //noinspection GradleCompatible
+//    implementation 'com.android.support:support-v4:24.2.1'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     implementation files('libs/gson-2.3.1.jar')
     implementation files('libs/okhttp-3.4.2.jar')
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    //noinspection GradleCompatible
     implementation 'com.android.support:recyclerview-v7:24.2.1'
 
 }
