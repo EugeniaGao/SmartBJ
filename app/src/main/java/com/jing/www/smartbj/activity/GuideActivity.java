@@ -14,7 +14,6 @@ import com.jing.www.smartbj.R;
 import com.jing.www.smartbj.adapter.GuideVpAdapter;
 import com.jing.www.smartbj.utils.Constant;
 import com.jing.www.smartbj.utils.SPUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +33,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      setContentView(R.layout.activity_guide);
+        setContentView(R.layout.activity_guide);
         initView();
 
         //去除状态栏
