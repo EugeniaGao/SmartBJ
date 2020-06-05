@@ -1,14 +1,12 @@
 package com.jing.www.smartbj.fragment;
 
-
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager; //迁移后包改变
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-
 import com.google.gson.Gson;
 import com.jing.www.smartbj.R;
 import com.jing.www.smartbj.activity.MainActivity;
@@ -19,10 +17,8 @@ import com.jing.www.smartbj.pager.NewsCenterContentTabPager;
 import com.jing.www.smartbj.bean.NewsCenterBean;
 import com.jing.www.smartbj.bean.NewsCenterTabBean;
 import com.viewpagerindicator.TabPageIndicator;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import butterknife.ButterKnife;
 
 /**
@@ -43,11 +39,17 @@ public class NewsCenterFragment extends BaseFragment implements BaseLoadNetDataO
     @Override
     public void initTitle() {
         setMenu(true);
-        setTitle("新闻中心");
+        setTitle("视频新闻");
         setType(false);
 
     }
 
+    /**
+     * getContext()获取上下文 使用this替换
+     * getActivity()
+     * getView()
+     * @return
+     */
     @Override
     public View createContent() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.newscenter_content, (ViewGroup) getView(), false);
@@ -149,7 +151,6 @@ public class NewsCenterFragment extends BaseFragment implements BaseLoadNetDataO
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
         ButterKnife.bind(this, rootView);
         return rootView;

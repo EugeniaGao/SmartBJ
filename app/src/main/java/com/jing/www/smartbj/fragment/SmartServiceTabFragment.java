@@ -12,7 +12,7 @@ public class SmartServiceTabFragment extends BaseFragment {
     @Override
     public void initTitle() {
         setMenu(true);
-        setTitle("智慧服务");
+        setTitle("广场");
         setType(false);
 
     }

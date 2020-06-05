@@ -1,9 +1,10 @@
 package com.jing.www.smartbj.adapter;
 
-import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.jing.www.smartbj.bean.NewsCenterTabBean;
 
@@ -13,7 +14,7 @@ import java.util.List;
  * Created by Administrator on 2017/2/12.
  * 轮播图图片适配器
  */
-public class SwitchImgVPAdapter extends PagerAdapter{
+public class SwitchImgVPAdapter extends PagerAdapter {
     private List<ImageView>imageViews;
     private  List<NewsCenterTabBean.TopNewsBean>topNewsBeanList;
 

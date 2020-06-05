@@ -14,7 +14,7 @@ public class GovaffairsFragment extends BaseFragment {
     @Override
     public void initTitle() {
         setMenu(true);
-        setTitle("政务");
+        setTitle("热搜");
         setType(false);
 
     }

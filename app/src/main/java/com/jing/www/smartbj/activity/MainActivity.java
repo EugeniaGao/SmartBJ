@@ -2,14 +2,14 @@ package com.jing.www.smartbj.activity;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jing.www.smartbj.R;
 import com.jing.www.smartbj.adapter.MenuAdapter;
@@ -22,7 +22,6 @@ import com.jing.www.smartbj.fragment.NewsCenterFragment;
 import com.jing.www.smartbj.fragment.SettingTabFragment;
 import com.jing.www.smartbj.fragment.SmartServiceTabFragment;
 import com.jing.www.smartbj.bean.NewsCenterBean;
-
 import java.util.ArrayList;
 import java.util.List;
 

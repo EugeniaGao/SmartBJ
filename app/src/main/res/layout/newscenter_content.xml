@@ -21,9 +21,9 @@
             android:background="#fff"/>
     </RelativeLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.core.view.ViewPager
         android:id="@+id/vp_newscenter_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent"></androidx.core.view.ViewPager>
 
 </LinearLayout>
