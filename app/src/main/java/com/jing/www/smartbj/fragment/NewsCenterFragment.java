@@ -71,6 +71,9 @@ public class NewsCenterFragment extends BaseFragment implements BaseLoadNetDataO
         return view;
     }
 
+    /**
+     * 輪播圖
+     */
     private void initViewPager() {
 
         views = new ArrayList();

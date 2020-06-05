@@ -195,6 +195,7 @@ public class NewsCenterContentTabPager implements ViewPager.OnPageChangeListener
 
     }
 
+
     //2.自定义开始切换方法开始轮播,未指定嗲用
     //被调用时机思考:tab被选中或是切换时,这个类是放在views中的,切换时是tab点击
     public void startSwitch() {
